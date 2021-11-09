@@ -1,6 +1,10 @@
+import { useContext } from 'react'
+import { Context } from '../../HOC'
 import './tree.css'
 
-const TreeController = ({ data, toggleIsOpen, getIsOpen }) => {
+const TreeController = ({ data }) => {
+	const { getIsOpen, toggleIsOpen } = useContext(Context)
+
 	const printTree = (itemsToRender) => {
 		return itemsToRender.map((item) => {
 			return (

@@ -17,10 +17,12 @@ export const GeneartePrompt = ({ getCalculation }) => {
 			</h2>
 			<input
 				value={depth}
+				type='number'
 				onChange={(e) => setDepth(e.currentTarget.value)}
 			/>
 			<input
 				value={number}
+				type='number'
 				onChange={(e) => setNumber(e.currentTarget.value)}
 			/>
 			<button className='genearte-prompt__button' onClick={calculate}>

@@ -1,8 +1,9 @@
 * {
 	margin: 0;
-	/* overflow: hidden; */
 }
 
 .App {
 	background-color: rgb(247, 247, 247);
+	position: relative;
+	overflow: hidden;
 }

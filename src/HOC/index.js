@@ -28,13 +28,13 @@ const Hoc = (HocComponent, data) => {
 		}
 
 		return (
-			<Context.Provider value={openedNodes}>
-				<HocComponent
-					data={data}
-					toggleIsOpen={toggleIsOpen}
-					getIsOpen={getIsOpen}
-					{...props}
-				/>
+			<Context.Provider
+				value={{
+					getIsOpen,
+					toggleIsOpen,
+				}}
+			>
+				<HocComponent data={data} {...props} />
 			</Context.Provider>
 		)
 	}
